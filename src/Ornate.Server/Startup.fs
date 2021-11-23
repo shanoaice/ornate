@@ -1,4 +1,4 @@
-namespace Pheasant.Web.Server
+namespace Ornate.Server
 
 open Microsoft.AspNetCore
 open Microsoft.AspNetCore.Authentication.Cookies
@@ -8,7 +8,7 @@ open Microsoft.Extensions.DependencyInjection
 open Bolero
 open Bolero.Remoting.Server
 open Bolero.Server
-open Pheasant.Web
+open Ornate
 open Bolero.Templating.Server
 
 type Startup() =
@@ -26,7 +26,7 @@ type Startup() =
             .AddRemoting<BookService>()
             .AddBoleroHost()
 #if DEBUG
-            .AddHotReload(templateDir = __SOURCE_DIRECTORY__ + "/../Pheasant.Web.Client")
+            .AddHotReload(templateDir = __SOURCE_DIRECTORY__ + "/../Ornate.Client")
 #endif
         |> ignore
 

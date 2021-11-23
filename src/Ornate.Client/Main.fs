@@ -1,4 +1,4 @@
-module Pheasant.Web.Client.Main
+module Ornate.Client.Main
 
 open System
 open Elmish

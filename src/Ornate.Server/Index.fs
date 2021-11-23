@@ -1,9 +1,9 @@
-module Pheasant.Web.Server.Index
+module Ornate.Server.Index
 
 open Bolero
 open Bolero.Html
 open Bolero.Server.Html
-open Pheasant.Web
+open Ornate
 
 let page = doctypeHtml [] [
     head [] [

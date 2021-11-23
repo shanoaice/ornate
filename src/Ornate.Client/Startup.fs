@@ -1,4 +1,4 @@
-namespace Pheasant.Web.Client
+namespace Ornate.Client
 
 open Microsoft.AspNetCore.Components.WebAssembly.Hosting
 open Bolero.Remoting.Client
